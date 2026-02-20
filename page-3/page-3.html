@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoodBodyFitness - Customize</title>
+    <!-- Link to shared stylesheet and fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- Optional: Social icon library (matches image style) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        /* --------------------------
+PAGE 3: CUSTOMIZE PAGE STYLES
+(Isolated to avoid conflicts)
+--------------------------- */
+.customize-page {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    min-height: 100vh;
+    background-image: url('c:\\Users\\Administrator\\Downloads\\a bunch of people exercising (5).jpg'); /* Replace with your background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    color: #f0f0f0;
+}
+
+/* Dark overlay for readability (matches Home page style) */
+.customize-page::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(114, 100, 100, 0.432);
+    z-index: 0;
+}
+
+/* Navbar (matches image placement at top) */
+.customize-nav {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding: 1.5rem 0;
+}
+
+.customize-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.customize-nav li {
+    display: inline-block;
+    margin: 0 2.5rem;
+}
+
+.customize-nav a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+/* Main content container */
+.customize-container {
+    position: relative;
+    z-index: 1;
+    width: 90%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 1rem 2rem;
+}
+
+/* Image positioning (exact as per your image) */
+.customize-images {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2rem 0;
+    flex-wrap: wrap;
+}
+
+.customize-images img {
+    border: 2px solid #fff;
+    max-width: 30%;
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+/* Headline text */
+.customize-headline {
+    font-size: 1.8rem;
+    line-height: 1.6;
+    text-align: center;
+    max-width: 1000px;
+    margin: 3rem auto;
+    font-weight: 600;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+}
+
+/* Bottom footer bar */
+.customize-footer-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(49, 47, 47, 0.233);
+    padding: 1rem 2rem;
+    margin-top: 4rem;
+    flex-wrap: wrap;
+}
+
+.social-links {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.social-links p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.social-links a {
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #ccc;
+}
+
+.cta-button {
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* --------------------------
+RESPONSIVE MEDIA QUERIES
+--------------------------- */
+@media (max-width: 1024px) {
+    .customize-nav li {
+        margin: 0 1.5rem;
+    }
+
+    .customize-headline {
+        font-size: 1.5rem;
+    }
+
+    .customize-footer-bar {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .customize-images {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .customize-images img {
+        max-width: 80%;
+    }
+
+    .customize-nav li {
+        display: block;
+        margin: 0.8rem 0;
+    }
+
+    .customize-headline {
+        font-size: 1.2rem;
+    }
+
+    .cta-button {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .social-links {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .customize-headline {
+        font-size: 1rem;
+    }
+}
+    </style>
+
+<body class="customize-page">
+    <!-- Consistent navbar structure with other pages -->
+    <nav class="customize-nav">
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="subscriptions.html">SUBSCRIPTIONS</a></li>
+            <li><a href="about.html">ABOUT US</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main content container -->
+    <div class="customize-container">
+        <!-- Three workout schedule images -->
+        <div class="customize-images">
+            <img src="c:\Users\Administrator\Downloads\timetable-workout-schedule(1).jpg" alt="timetable-1" class="img-left">
+            <img src="c:\Users\Administrator\Downloads\timetable-workout-schedule(2).jpg" alt="timetable-2" class="img-center">
+            <img src="c:\Users\Administrator\Downloads\timetable-workout-schedule(3).jpg" alt="timetable-3" class="img-right">
+        </div>
+        <!-- Headline text -->
+        <p class="customize-headline">Customize your profile, Your workout routine, <br> 
+            And your own timetables so you can choose the right day for you.</p>
+
+        <!-- Bottom bar with socials and CTA -->
+        <div class="customize-footer-bar">
+            <div class="social-links">
+                <p>Follow us thru our platforms:</p>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+            <div class="cta-button">
+                Try Our free 7-day Consultation
+            </div>
+        </div>
+    </div>
+  <script>
+// Wait for the entire page to load before making changes
+document.addEventListener('DOMContentLoaded', function() {
+
+  // 1. Target Facebook Icon & Set Color
+  const facebookIcon = document.querySelector('.fab.fa-facebook-f');
+  if (facebookIcon) { // Only run if the icon exists on the page
+    facebookIcon.style.color = '#1877F2'; // Official Facebook blue
+  }
+
+  // 2. Target Instagram Icon & Set Color
+  const instagramIcon = document.querySelector('.fab.fa-instagram');
+  if (instagramIcon) {
+    // Instagram uses a gradient—we'll set that here
+    instagramIcon.style.background = 'linear-gradient(45deg, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D)';
+    instagramIcon.style.webkitBackgroundClip = 'text'; // Makes gradient apply to text/icon
+    instagramIcon.style.color = 'transparent'; // Hides default color so gradient shows
+  }
+
+  // 3. Target YouTube Icon & Set Color
+  const youtubeIcon = document.querySelector('.fab.fa-youtube');
+  if (youtubeIcon) {
+    youtubeIcon.style.color = '#FF0000'; // Official YouTube red
+  }
+
+});
+</script>
+</body>
+</html>
